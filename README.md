@@ -1,2 +1,1 @@
-#This is a zomata landing page clone
-
+#This is a zomata landing page clone.
