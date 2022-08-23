@@ -1,0 +1,150 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero__section 
+{
+    background: url(images/heroSectionBackground.png);
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 16px 48px;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar__menu_container
+{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__menu_container .user__icon
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    display: flex;
+    border:solid 1px;
+    border-color: white;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.hero__section_container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    height: calc(60vh - 60px);
+}
+
+.hero__section_logo
+{
+    width:220px;
+}
+
+.hero__section_logo_beneath_detail
+{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.hero__section_container_input
+{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    width: 58%;
+    border-radius: 10px;
+}
+
+.container__input_location, .container__input_search
+{
+    padding: 4px;
+    border: none;
+    outline: none;
+}
+
+.container__input_location
+{
+    width: 35%;
+    border-right: 1.5px solid #e0e0e0;
+}
+
+.container__input_search 
+{
+    width: 65%;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .navbar__menu_container .user__icon
+    {
+        display: flex;
+    }
+
+    .link
+    {
+        display:none;
+    }
+
+    .navbar
+    {
+        padding: 16px;
+    }
+    
+    .hero__section
+    {
+        min-height: 80vh;
+    }
+
+    .hero__section_container_input
+    {
+        flex-direction: column;
+        background-color: transparent;
+        width:100%;
+    }
+
+    .container__input_location, .container__input_search
+    {
+        padding:15px;
+        border-radius: 10px;
+        width: 95%;
+    }
+
+    .hero__section_container
+    {
+        height: calc(80vh - 60px);
+
+    }
+    .hero__section_logo_beneath_detail
+    {
+        font-size: 20px;
+        width: 95%;
+    }
+}
